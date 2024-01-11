@@ -1,0 +1,41 @@
+{
+    "food": {
+        "0": "cake",
+        "1": "chocolate",
+        "2": "bread",
+        "3": "potato",
+        "4": "rice",
+        "5": "tomato",
+        "6": "lettuce",
+        "7": "apple",
+        "8": "orange",
+        "9": "milk",
+        "10": "chicken"
+    },
+    "animals": {
+        "0": "duck",
+        "1": "tiger",
+        "2": "rabbit",
+        "3": "monkey",
+        "4": "alligator",
+        "5": "chimpanzee",
+        "6": "elephant",
+        "7": "goat",
+        "8": "badger",
+        "9": "armadillo",
+        "10": "bat"
+    },
+    "jobs": {
+        "0": "barman",
+        "1": "barber",
+        "2": "butcher",
+        "3": "dentist",
+        "4": "engineer",
+        "5": "electrician",
+        "6": "judge",
+        "7": "plumber",
+        "8": "reporter",
+        "9": "scientist",
+        "10": "secretary"
+    }
+}

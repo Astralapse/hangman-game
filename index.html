@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Gallows Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class='game-modal'>
+            <div class="popup-container">
+                <div class="popup">
+                </div>
+            </div>
+        </div>
+        <div class="game-container">
+            <div class="game">
+                <div class="hangman-container">
+                    <img class="gallow" src="images/hangman-0.svg" alt="">
+                </div>
+
+                <div class="category-btns">
+                    <h1>Select a category</h1>
+                    <button id="animals" class="category-btn">Animals</button>
+                    <button id="food" class="category-btn">Food</button>
+                    <button id="jobs" class="category-btn">Jobs</button>
+                </div>
+
+                <div class="game-zone hidden-down">
+                    <ul class="game-word"></ul>
+                    <span class="incorrect-guesses">Incorrect guesses: <span class="counter">0 / 6</span></span>
+                    <ul class="letters">
+                        <li class="letter">A</li>
+                        <li class="letter">B</li>
+                        <li class="letter">C</li>
+                        <li class="letter">D</li>
+                        <li class="letter">E</li>
+                        <li class="letter">F</li>
+                        <li class="letter">G</li>
+                        <li class="letter">H</li>
+                        <li class="letter">I</li>
+                        <li class="letter">J</li>
+                        <li class="letter">K</li>
+                        <li class="letter">L</li>
+                        <li class="letter">M</li>
+                        <li class="letter">N</li>
+                        <li class="letter">O</li>
+                        <li class="letter">P</li>
+                        <li class="letter">Q</li>
+                        <li class="letter">R</li>
+                        <li class="letter">S</li>
+                        <li class="letter">T</li>
+                        <li class="letter">U</li>
+                        <li class="letter">V</li>
+                        <li class="letter">W</li>
+                        <li class="letter">X</li>
+                        <li class="letter">Y</li>
+                        <li class="letter">Z</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

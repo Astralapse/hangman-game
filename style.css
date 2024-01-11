@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(108 56 215);
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.game-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    background-color: #fff;
+    border-radius: 11px;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.hangman-container {
+    margin-left: 25px;
+}
+
+.game-zone {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 120px;
+    padding-left: 38px;
+}
+
+.incorrect-guesses {
+    font-size: 18px;
+}
+
+.incorrect-guesses .counter {
+    color: #12d146;
+}
+
+.game-word {
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 0;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.word-letter {
+    margin-right: 15px;
+}
+
+.letters {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 25px;
+}
+
+.letter {
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 22px;
+    background-color: rgb(108 56 215);
+    color: #fff;
+    padding: 6px;
+    width: 30px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.letter:hover {
+    background-color: rgb(131, 78, 238);
+}
+
+.used {
+    opacity: 80%;
+    cursor: default;
+}
+
+.category-btns {
+    text-align: center;
+    margin-left: 113px;
+    position: relative;
+    top: 0;
+    opacity: 1;
+
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        top: 120px;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        top: 120px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+
+
+@keyframes fadeInPopup {
+    0% {
+        margin-top: 150px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: -150px;
+    }
+}
+
+
+@keyframes fadeOutPopup {
+    0% {
+        margin-top: -150px;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        margin-top: 150px;
+    }
+}
+
+.category-btn {
+    padding: 20px;
+    border: solid rgb(108 56 215);
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 106px;
+    margin-right: 15px;
+    transition: all ease-out 0.3s;
+}
+
+.category-btn:hover {
+    color: #fff;
+    transition: all ease-out 0.1s;
+    background-color: rgb(108 56 215);
+}
+
+.select-category {
+    background-color: rgb(108 56 215);
+    color: #fff;
+}
+
+.hidden-down {
+    animation: fadeOut 1s forwards;
+}
+
+.hidden-top {
+    animation: fadeIn 1s forwards;
+}
+
+.game-modal {
+    background: rgb(0 0 0 / 28%);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s 0.1s ease;
+}
+
+.show {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.2s 0.2s ease;
+}
+
+
+.popup-container {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 9px;
+    top: 50%;
+    left: 50%;
+    height: 300px;
+    width: 400px;
+    margin-left: -200px;
+    margin-top: -150px;
+}
+
+.hiddenPopup-top {
+    animation: fadeInPopup 0.8s forwards;
+}
+
+.hiddenPopup-down {
+    animation: fadeOutPopup 0.8s forwards;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-title {
+    color: rgb(108 56 215);
+    margin-bottom: 10px;
+}
+
+.emoji {
+    font-size: 84px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.info {
+    margin-bottom: 15px;
+}
+
+.founded-word {
+    color: rgb(108 56 215);
+}
+
+.retry {
+    padding: 12px;
+    border: solid rgb(108 56 215);
+    font: inherit;
+    color: #fff;
+    background-color: rgb(108 56 215);
+    cursor: pointer;
+    border-radius: 24px;
+    width: 150px;
+    margin-right: 15px;
+    transition: all ease-out 0.3s;
+}
+
+.retry:hover {
+    transition: all ease-out 0.3s;
+    background-color: rgb(123, 67, 235);
+    border: solid rgb(123, 67, 235);
+}
