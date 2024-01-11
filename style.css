@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: rgb(108 56 215);
     font-family: 'Roboto', sans-serif;
 }
@@ -29,11 +29,10 @@ li {
     width: 60%;
     display: flex;
     align-items: center;
+    padding: 20px;
 }
 
-.hangman-container {
-    margin-left: 25px;
-}
+
 
 .game-zone {
     display: none;
@@ -164,6 +163,7 @@ li {
     width: 106px;
     margin-right: 15px;
     transition: all ease-out 0.3s;
+    margin-top: 15px;
 }
 
 .category-btn:hover {
@@ -267,4 +267,113 @@ li {
     transition: all ease-out 0.3s;
     background-color: rgb(123, 67, 235);
     border: solid rgb(123, 67, 235);
+}
+
+@media (max-width: 1370px) {
+    .select-title {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 1315px) {
+    .category-btns {
+        margin-left: 0;
+        top: 90px;
+    }
+
+    .game {
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+    }
+
+    .letters {
+        margin-right: 0;
+    }
+
+    .game-zone {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1120px) {
+    .game {
+        height: 80%;
+    }
+}
+
+@media (max-width: 1110px) {
+    .game {
+        height: 82%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .category-btns {
+        top: 20px;
+    }
+}
+
+@media (max-width: 880px) {
+    .game {
+        width: 75%;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 93%;
+    }
+
+    .game {
+        width: 80%;
+    }
+
+    .gallow {
+        height: 200px;
+    }
+}
+
+@media (max-width: 590px) {
+    .game {
+        width: 85%;
+    }
+
+    .gallow {
+        height: 200px;
+    }
+}
+
+@media (max-width: 550px) {
+    .game {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 520px) {
+    .letter {
+        padding: 5px;
+        width: 27px;
+    }
+
+    .game {
+        width: 120%;
+    }
+
+    .container {
+        padding: 0;
+        width: 89%;
+    }
+}
+
+@media (max-width: 455px) {
+    .game {
+        height: 90%;
+    }
+
+    .popup-container {
+        margin-left: -150px;
+        width: 300px;
+    }
 }
